@@ -1,0 +1,56 @@
+<?php echo $this->doctype() ?>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <?php echo $this->headTitle(); ?>
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headStyle(); ?>
+        <?php echo $this->headScript(); ?>
+
+        <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+        <!--[if IE 6]><link rel="stylesheet" href="/css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+        <!--[if IE 7]><link rel="stylesheet" href="/css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+
+        <script type="text/javascript" src="/js/script.js"></script>
+
+
+    </head>
+    <body>      
+        <?php echo $this->render('_header.phtml') ?>
+                            <?php echo $this->render('_menu.phtml') ?>
+                            <div class="art-content-layout">
+                                <div class="art-content-layout-row">
+                                    <?php echo $this->render('_leftMenu.phtml') ?>
+                                    <div class="art-layout-cell art-content" style="width: 800px;">
+                                        <div class="art-post">
+                                            <div class="art-post-body">
+                                                <div class="art-post-inner art-article">
+                                                    <h2 class="art-postheader"><?php echo $this->pageTitle; ?></h2>
+
+                                                    <div class="cleared"></div>
+                                                </div>
+
+                                                <div class="cleared"></div>
+                                            </div>
+                                        </div>
+                                        <div class="art-post">
+                                            <div class="art-post-body">
+                                                <div class="art-post-inner art-article">
+                                                <!--  content part -->    
+                                                <?php echo $this->layout()->content ?> 
+
+                                                </div>
+                                                <div class="cleared"></div>
+                                            </div>
+
+                                            <div class="cleared"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+<?php echo $this->render('_footer.phtml') ?>
+</body>
+</html>

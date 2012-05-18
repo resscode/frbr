@@ -1,0 +1,29 @@
+<!-- ---------------------------- MENU  -------------------------------------- -->
+<div class="art-nav">
+    <div class="l"></div>
+    <div class="r"></div>
+
+    <ul class="art-menu">
+        <li> 
+            <a href="/" <?php echo $this->url()=="/" ? 'class="active"' : ''; ?>><span class="l"></span><span class="r"></span><span class="t">Галлерея</span></a>
+        </li>
+        <li>
+            <a href="<?php echo $this->url(array('controller' => 'sheme', 'action' => 'edit'), null, true); ?>"  <?php echo $this->url()=="/sheme/edit" ? 'class="active"' : ''; ?>><span class="l"></span><span class="r"></span><span class="t">Редактор</span></a>
+<!--            <ul>
+                <li><a href="#">Редактор</a>
+                    <ul>
+                        <li><a href="#">Создать</a></li>
+                        <li><a href="#">Открыть</a></li>
+                        <li><a href="#">Сохранить</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Галлерея</a></li>
+                <li><a href="#">Menu Subitem 3</a></li>
+            </ul>-->
+        </li>		
+        <li>
+            <a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'info'), null, true); ?>" <?php echo $this->url()=="/index/info" ? 'class="active"' : ''; ?>><span class="l"></span><span class="r"></span><span class="t">О проекте</span></a>
+        </li>
+    </ul>
+</div>
+<!-- ---------------------------- END MENU  -------------------------------------- -->

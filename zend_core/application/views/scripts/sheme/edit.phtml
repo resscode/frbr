@@ -1,0 +1,37 @@
+<?php
+$this->headLink()->appendStylesheet('/css/sheme.css')
+        ->appendStylesheet('/css/colorpicker.css');
+$this->headScript()->offsetSetFile(10, '/js/library/jquery.js')
+        ->appendFile('/js/library/jcanvas.js')
+        ->appendFile('/js/library/colorpicker.js')
+        ->appendFile('/js/sheme.js');
+?>
+<?php
+$this->menu = '
+    <ul class="art-vmenu">
+                        <li>
+                            <a href="javascript:void(0)" onclick="AddThread()"><span class="l"></span><span class="r"></span><span class="t">Добавить Нить</span></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="DelThread()"><span class="l"></span><span class="r"></span><span class="t">Удалить нить</span></a>
+                            
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="AddRow()"><span class="l"></span><span class="r"></span><span class="t">Добавить строку</span></a>
+                            
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="DelRow()"><span class="l"></span><span class="r"></span><span class="t">Удалить строку</span></a>
+                            
+                        </li>
+                        <li style="height:20px;">                        
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" onclick="SavePicture()"><span class="l"></span><span class="r"></span><span class="t">Сохранить картинкой</span></a>
+                            
+                        </li>
+                    </ul>';
+?>
+<canvas id="canvasInterface" width="400" height="400"></canvas>
+<!--<div id="FBscheme"> 
+</div>-->
